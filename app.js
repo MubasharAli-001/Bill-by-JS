@@ -5,7 +5,7 @@ let sugarprice;
 let flavor= prompt("ENTER YOUR FLAVOR:Orange,Mango,Apple")
 let noOfGlasses= prompt("Enter NO OF GLASSES")
 let sizeOfGlass= prompt("SELECT:small,medium,large")
-let Extrasugar=prompt("EXTRA SUGAR:yes,no")
+let Extrasugar=prompt("DO YOU WANT EXTRA SUGAR:yes,no")
 
 
 if(flavor == "orange"){
@@ -30,8 +30,8 @@ if(Extrasugar == "yes"){
 
 let totalOfFlavor=flavorprice*noOfGlasses
 let totalOfSize=sizeprice*noOfGlasses
-
-let totalprice=totalOfFlavor+totalOfSize+sugarprice
+let totalOfSugar=sugarprice*noOfGlasses
+let totalprice=totalOfFlavor+totalOfSize+totalOfSugar
 
 console.log("SELECTED JUICE:",flavor)
 /*console.log("FLAVOR PRICE:",flavorprice)
